@@ -1,0 +1,32 @@
+1. Platform : Drone
+2. Payload : SAR + optical camera
+3. Operational mode : Stripmap, (Spotlight, Scan mode도 존재.)
+
+4. 관측범위 : 플랫폼에서 20km 떨어진 대상관측, (관측폭은 미정)
+5. 분해능 : X-band 이용, azimuth resolution : 1.5m, range resolution : 1m
+6. 관측품질 : 대상에 따른 반사도를 분석하여, 특정 거리 x km만큼 떨어진 대상의 반사도를 관측했을 때 
+	     y dB 이상의 SNR 얻을 수 있도록 관측.
+
+7. 반사도 :
+반사도 (dBsm) 		반사도 (m2) 			 예
+     > -5 			   > 0.3 		 Man-made objects, very rough surface
+   0 ~ -10 		   1 ~ 0.1            Man, Rough surface, dense vegetation (forest)
+ -10 ~ - 20                       0.1 ~ 0.01         Agricultural crops, moderately rough surfaces
+    < -20                            < 0.01               Smooth surface, calm water, road, sand
+      -20                              0.01                                       Bird
+      -30                             0.001                             Stealth aircraft (F-22)
+      -50                            0.00001                                   Insect
+
+8. 운용고도 : <18km (성층권)
+9. 관측각도 :  10 ~ 70 °
+10. 운용 주파수 : X-band(9GHz) or L-band (>1GHz)
+11. PRF : >1000Hz
+12. 손실 : 거리감쇄, noise 등
+13. 송신전력 : ?
+---------------------------------------------------------------------------------------------------------------
+
+고도, 관측각도, 운용주파수 --> 위성속도
+안테나길이, 폭 --> 빔 폭, 이득
+대역 폭, 펄스 폭 --> 거리해상도, 방위해상도
+운용 PRF --> PRF min, PRF max, Swath width(관측 폭)
+sigma, 시스템손실, 안테나 면적, 송신전력 --> 안테나 이득, SNR, PSLR
